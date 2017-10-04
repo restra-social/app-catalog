@@ -1,0 +1,4 @@
+name: "S3FS Storage"
+description: "Rexray s3fs rancher storage driver"
+version: 0.1
+category: Storage

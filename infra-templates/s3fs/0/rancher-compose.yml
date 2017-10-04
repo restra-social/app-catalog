@@ -1,0 +1,38 @@
+.catalog:
+  name: "Rancher Rexray-S3FS"
+  version: 0.1
+  description: |
+    Docker volume plugin for S3FS
+  questions:
+  - variable: S3FS_ENDPOINT
+    label: S3 Endpoint
+    type: string
+    description: The S3 endpoint to use
+    required: true
+  - variable: S3FS_ACCESSKEY
+    label: S3 Access Key
+    type: password
+    description: S3 Access Key
+    required: true
+  - variable: S3FS_SECRETKEY
+    label: S3 Secret Key
+    type: password
+    description: S3 Access Key
+    required: true
+  - variable: S3FS_OPTIONS
+    label: Options
+    type: String
+    description: S3FS Options ex. url=http://Endpoint,allow_other,nonempty
+    default: allow_other,nonempty
+  - variable: MOUNT_ROOT_PATH
+    label: Mount Root path for libstorage
+    type: String
+    description: The default path to mount when mounting the bucket
+    default: /
+
+    
+s3fs-driver:
+  storage_driver:
+    name: rancher-s3fs
+    scope: environment
+    volume_access_mode: multiHostRW
