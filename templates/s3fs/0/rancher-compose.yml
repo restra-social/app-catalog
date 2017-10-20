@@ -15,8 +15,8 @@
     description: S3 Access Key
     required: true
 
-s3fs-driver:
+s3fs-driver-test:
   storage_driver:
-    name: rexray/s3fs
+    name: "${VOLUME_DRIVER_NAME}"
     scope: environment
     volume_access_mode: multiHostRW

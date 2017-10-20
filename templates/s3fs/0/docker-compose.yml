@@ -1,21 +1,18 @@
-version: '2'
-services:
-  s3fs-driver:
-    privileged: true
-    network_mode: host
-    image: rexray/s3fs
-    pid: host
-    cap_add:
-      - SYS_ADMIN
-    labels:
-      io.rancher.scheduler.global: 'true'
-      io.rancher.container.create_agent: 'true'
-      io.rancher.container.agent.role: environment
-      io.rancher.container.dns: 'true'
-    environment:
-      S3FS_ACCESSKEY: '${S3FS_ACCESSKEY}'
-      SECRETKEY: '${SECRETKEY}'
-    volumes:
+s3fs-driver-test:
+  privileged: true
+  ipc: host
+  net: host
+  tty: true
+  image: "rexray/s3fs"
+  cap_add:
+    - SYS_ADMIN
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.dns: 'true'
+  environment:
+    S3FS_ACCESSKEY: '${S3FS_ACCESSKEY}'
+    SECRETKEY: '${SECRETKEY}'
+  volumes:
     - /dev:/dev
     - /run:/run
     - /var/lib/rexray/volumes:/var/lib/rexray/volumes:shared
