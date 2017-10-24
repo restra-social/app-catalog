@@ -4,13 +4,13 @@
   description: |
     Docker volume plugin for S3FS
   questions:
+  - variable: S3FS_ENTRY
+    label: S3 Entry Point
+    type: url
+    description: S3 Endpoint or Entry Point
+    required: true
   - variable: S3FS_ACCESSKEY
     label: S3 Access Key
-    type: password
-    description: S3 Access Key
-    required: true
-  - variable: SECRETKEY
-    label: S3 Secret Key
     type: password
     description: S3 Access Key
     required: true
