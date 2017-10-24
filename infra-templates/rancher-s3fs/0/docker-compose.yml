@@ -17,8 +17,7 @@ services:
       S3FS_SECRETKEY: "${S3FS_SECRETKEY}"
       S3FS_OPTIONS: "${S3FS_OPTIONS}"
     volumes:
-      - /run:/run:shared
-      - /var/run:/var/run:shared
-      - /dev:/host/dev:shared
-      - /var/lib/rancher/volumes:/var/lib/rancher/volumes:shared
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /run:/run
+      - /var/run:/var/run
+      - /dev:/host/dev
+      - /var/lib/rancher/volumes:/var/lib/rexray/volumes:shared
