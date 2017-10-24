@@ -1,6 +1,6 @@
 version: "2"
 services:
-  rancher-s3:
+  rancher-s3-driver:
     image : fahim74/rancher-rexray-s3-plugin
     network_mode: host
     cap_add:

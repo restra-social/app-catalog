@@ -25,7 +25,7 @@
       description: S3FS Options ex. url=http://Endpoint,allow_other,nonempty
       default: allow_other,nonempty
 
-s3fs-driver-test:
+rancher-s3-driver:
   storage_driver:
     name: ranchar-s3fs
     scope: environment
