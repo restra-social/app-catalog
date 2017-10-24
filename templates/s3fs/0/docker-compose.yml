@@ -20,4 +20,5 @@ services:
       - /run:/run:shared
       - /var/run:/var/run:shared
       - /dev:/host/dev:shared
-      - /var/lib/rexray/volumes:/var/lib/rancher/volumes:shared
+      - /var/lib/rancher/volumes:/var/lib/rancher/volumes:shared
+      - /var/run/docker.sock:/var/run/docker.sock
