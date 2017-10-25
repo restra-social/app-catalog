@@ -19,4 +19,4 @@ services:
       - /run:/run
       - /var/run:/var/run
       - /dev:/host/dev
-      - /var/lib/rancher/volumes:/var/lib/rancher/volumes:shared
+      - /var/lib/rancher/volumes:/var/lib/rexray/volumes:shared

@@ -22,6 +22,6 @@
 
 rancher-minio-driver:
   storage_driver:
-    name: rexray
+    name: rancher-s3
     scope: environment
     volume_access_mode: multiHostRW
