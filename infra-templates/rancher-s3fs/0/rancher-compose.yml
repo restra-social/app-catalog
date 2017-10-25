@@ -20,7 +20,7 @@
       description: S3 Access Key
       required: true
 
-rexray:
+rexray-driver:
   storage_driver:
     name: rexray
     scope: environment
