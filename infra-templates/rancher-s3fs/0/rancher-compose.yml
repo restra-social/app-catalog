@@ -4,11 +4,6 @@
   description: |
     Docker volume plugin for Minio
   questions:
-    - variable: S3FS_ENTRY
-      label: S3 Endpoint
-      type: string
-      description: The S3 endpoint to use
-      required: true
     - variable: S3FS_ACCESSKEY
       label: S3 Access Key
       type: password
@@ -20,7 +15,7 @@
       description: S3 Access Key
       required: true
 
-rexray-driver:
+rexray-s3-driver:
   storage_driver:
     name: rexray
     scope: environment

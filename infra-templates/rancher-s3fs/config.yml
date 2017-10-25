@@ -1,4 +1,4 @@
-name: "Rancher Minio Storage Driver"
-description: "Rancher Minio storage driver based on Rexray"
+name: "Rancher S3 Storage Driver"
+description: "Rancher S3 storage driver based on Rexray"
 version: 0.3.0
 category: Storage
