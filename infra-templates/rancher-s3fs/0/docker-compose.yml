@@ -1,6 +1,6 @@
 version: "2"
 services:
-  rancher-minio-driver:
+  rexray:
     privileged: true
     image : fahim74/rancher-rexray-s3-plugin:minio
     network_mode: host

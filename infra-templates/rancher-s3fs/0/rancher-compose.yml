@@ -20,8 +20,8 @@
       description: S3 Access Key
       required: true
 
-rancher-minio-driver:
+rexray:
   storage_driver:
-    name: rancher-s3
+    name: rexray
     scope: environment
     volume_access_mode: multiHostRW
