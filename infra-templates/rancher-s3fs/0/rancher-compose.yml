@@ -27,6 +27,6 @@
 
 rancher-s3-driver:
   storage_driver:
-    name: ranchar-s3fs
+    name: rexray
     scope: environment
     volume_access_mode: multiHostRW
