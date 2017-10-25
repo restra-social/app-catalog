@@ -2,7 +2,7 @@ version: "2"
 services:
   rancher-s3-driver:
     privileged: true
-    image : fahim74/rancher-rexray-s3-plugin
+    image : fahim74/rancher-rexray-s3-plugin:minio
     network_mode: host
     cap_add:
       - SYS_ADMIN
