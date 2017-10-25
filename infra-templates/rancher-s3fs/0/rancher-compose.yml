@@ -1,8 +1,8 @@
 .catalog:
-  name: "Rancher Rexray-S3FS"
-  version: 0.1
+  name: "Rancher Minio Storage Driver"
+  version: 0.3.0
   description: |
-    Docker volume plugin for S3FS
+    Docker volume plugin for Minio
   questions:
     - variable: S3FS_ENTRY
       label: S3 Endpoint
@@ -19,13 +19,8 @@
       type: password
       description: S3 Access Key
       required: true
-    - variable: S3FS_OPTIONS
-      label: Options
-      type: String
-      description: S3FS Options ex. url=http://Endpoint,allow_other,nonempty
-      default: allow_other,nonempty
 
-rancher-s3-driver:
+rancher-minio-driver:
   storage_driver:
     name: rexray
     scope: environment

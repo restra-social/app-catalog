@@ -1,6 +1,6 @@
 version: "2"
 services:
-  rancher-s3-driver:
+  rancher-minio-driver:
     privileged: true
     image : fahim74/rancher-rexray-s3-plugin:minio
     network_mode: host
@@ -15,7 +15,6 @@ services:
       S3FS_ENTRY: "${S3FS_ENTRY}"
       S3FS_ACCESSKEY: "${S3FS_ACCESSKEY}"
       S3FS_SECRETKEY: "${S3FS_SECRETKEY}"
-      S3FS_OPTIONS: "${S3FS_OPTIONS}"
     volumes:
       - /run:/run
       - /var/run:/var/run
